@@ -6,18 +6,19 @@
     --Section-color:#F4F4FD; 
     --Footer-font-color: #E7E9FC;
     --Footer-paragraf-color: #E7E9FC;
+    --hover-focus: #404BBF;
 }
 
 body {
-    background-color: #E5E5E5;
+    /* background-color: #E5E5E5; */
     color: #434455; 
     font-family: Roboto, sans-serif;
     letter-spacing: 0.02em;
 }
-ul {
+.list {
     list-style: none;
 }
-a {
+.link {
     text-decoration: none;
 }
 /* header color #2E2F42 - 
@@ -28,122 +29,196 @@ NAVY BLUE */
 /* Section-color #F4F4FD - CLOUD */
 /* Footer color #E7E9FC - CORNFLOWER */
 /* Footer-paragraf-color #E7E9FC - CORNFLOWER */
-
+/* hover-focus #404BBF - ocean */
+/* background: #F4F4FD; */
 /* Logo web */
 
 
 /* HEADER */
 
-.logo {
-    color: var(--header-title-color);
-    font-family: 'Raleway' sans-serif;    
+.header-logo {
+    color: var(--button-portflio-color);
+    font-family: Raleway, sans-serif;    
     font-weight: 800;
     font-size: 18px;
-    line-height: 1.33;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    text-decoration: none;
 }
 
-.first-logo {
-    color: var(--button-portflio-color);
+.logo-item {
+    color: #2E2F42
 }
-/* site nav */
-.list-site-nav .link{
-    color: var(--header-title-color);
-    
+
+.header-link {
     font-weight: 500;
     font-size: 16px;
     line-height: 1,5;
     letter-spacing: 0.02em;
+    color: var(--header-title-color);    
 }
-.list-site-nav .link:hover, .site-nav .link:focus {
-    color: var(--button-portflio-color);
+
+.header-link:hover,
+.header-link:focus {
+    color: var(--hover-focus);    
 }
-/* address nav */
-.list-address-nav .link{
-    color: var(--paragraf-color);
+
+.address-link {
     font-style: normal;
     font-family: 'Roboto';    
     font-size: 16px;
     line-height: 1,5;
     letter-spacing: 0.02em;
-}
-.list-address-nav .link:hover, .list-address-nav .link:focus {
-    color: var(--button-portflio-color);
-}
-/* Section  */
-.section {
     color: var(--paragraf-color);
-    font-size: 16px;
-    line-height: 1.5;
 }
-
-.section-title {
-    color: var(--header-title-color);
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.1;
+.address-link:hover,
+.address-link:focus {
+    color: var(--hover-focus);    
 }
-.title {
-    color: var(--header-title-color);    
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    
-}
-.hero-title{
+/* Section hero */
+.hero {
     background-color: var(--header-title-color);
+}
+.hero-title {    
     color: var(--button-hero-color);
     font-weight: 700;
     font-size: 56px;
-    line-height: 1.1;
-
+    line-height: 1.07;
+    text-align: center;
 }
-.button-hero{
+.hero-button {
     font-family: inherit;
     background-color: var(--button-portflio-color);
     color: var(--button-hero-color);
-}
-/* section OUR TEAM */
-.last-section{
-    background-color: var(--Section-color);
-}
-
-/* Footer */
-.footer {
-    background-color: var(--header-title-color);
-}
-.logo-bottom{
-    color: var(--Footer-font-color);
-}
-.bottom-paragraf{
-    color: var(--Footer-paragraf-color);
-}
-
-/* POTFOLIO */
-
-/* Button-first-stile */
-.button-first-stile{
-    background-color: #E7E9FC;
-    color: var(--button-portflio-color)
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.5;   
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
     letter-spacing: 0.04em;
+    cursor: pointer;
 }
 
-/* Button-second-stile */
-.button-link:hover, .button-link:focus{
-    background-color: #404BBF;
-    color: var(--button-hero-color)
-}
+/* section top */
 
-/* paragrag */
-.link{
-    color: var(--paragraf-color);
-    font-style: normal;
-    font-family: 'Roboto';    
-    font-size: 16px;
-    line-height: 1,5;
+.section-top-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
     letter-spacing: 0.02em;
+    color: var(--header-title-color);
+}
+.section-top-paragraf {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--paragraf-color);
+    }
+
+    /* section middle */
+
+.section-middle-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--header-title-color);
+}
+
+
+/* section bottom */
+.section-bottom {
+    background: #F4F4FD;
+}
+.section-bottom-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--header-title-color);
+}
+
+.bottom-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--header-title-color);
+}
+.section-bottom-paragraf {
+    font-size: 16px;
+line-height: 1.5;
+text-align: center;
+letter-spacing: 0.02em;
+color: var(--paragraf-color);
+}
+
+
+/* footer section */
+.footer {
+    background: #2E2F42;
+}
+.footer-logo {    
+    font-family: Raleway, sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--button-portflio-color);
+}
+.futer-span {
+    color: #F4F4FD;
+
+}
+.footer-paragraf {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #E7E9FC;
+}
+
+
+/* PORTFOLIO */
+
+
+.button-portfolio-click {
+    background-color: #F4F4FD; 
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #4D5AE5;
+    cursor: pointer;
+}
+.button-portfolio-click:hover,
+.button-portfolio-click:focus {
+    background: #404BBF;
+    color: #FFFFFF;
+}
+
+.card-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2E2F42;
+}
+.card-pafagraf {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
 }
