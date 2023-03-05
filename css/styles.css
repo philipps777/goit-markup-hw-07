@@ -63,12 +63,14 @@ NAVY BLUE */
 .header-link:focus {
     color: var(--hover-focus);    
 }
-
-.address-link {
+.address {
     font-style: normal;
-    font-family: 'Roboto';    
+}
+.address-link {    
+    font-family: 'Roboto';  
+    font-style:normal;  
     font-size: 16px;
-    line-height: 1,5;
+    line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--paragraf-color);
 }
@@ -86,6 +88,7 @@ NAVY BLUE */
     font-size: 56px;
     line-height: 1.07;
     text-align: center;
+    letter-spacing: 0.02em;
 }
 .hero-button {
     font-family: inherit;
@@ -153,10 +156,10 @@ NAVY BLUE */
 }
 .section-bottom-paragraf {
     font-size: 16px;
-line-height: 1.5;
-text-align: center;
-letter-spacing: 0.02em;
-color: var(--paragraf-color);
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--paragraf-color);
 }
 
 
@@ -192,6 +195,7 @@ color: var(--paragraf-color);
 
 
 .button-portfolio-click {
+    font-family: "Roboto", sans-serif; 
     background-color: #F4F4FD; 
     font-weight: 500;
     font-size: 16px;
@@ -203,6 +207,7 @@ color: var(--paragraf-color);
     color: #4D5AE5;
     cursor: pointer;
 }
+
 .button-portfolio-click:hover,
 .button-portfolio-click:focus {
     background: #404BBF;
