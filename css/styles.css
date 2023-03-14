@@ -210,7 +210,7 @@ NAVY BLUE */
 /* section top */
 
 .section-info{
-    display: none;
+    visibility: hidden;
 }
 .section-top{
     padding-bottom: 120px;
@@ -376,7 +376,7 @@ NAVY BLUE */
 }
 
 .section-portfolio-title{    
-    display: none;
+    visibility: hidden;
 
 }
 .button-portfolio-list{
