@@ -70,7 +70,7 @@ NAVY BLUE */
 .header{
     padding-top: 24px;
     padding-bottom: 24px;
-    border: 1px solid #E7E9FC;
+    border-bottom: 1px solid var(--border-image);
     
 }
 .header-container{
@@ -138,9 +138,7 @@ NAVY BLUE */
 }
 .address { 
     display: flex;
-    align-items: center;   
-    /* padding-top: 24px;  
-    padding-bottom: 24px;   */
+    align-items: center;      
     font-style: normal;
     
     
@@ -167,8 +165,8 @@ NAVY BLUE */
 
 .hero {
     background-color: var(--header-title-color);
-    padding-bottom: 120px;
-    padding-top: 120px;
+     padding-bottom: 188px; 
+    /* padding-top: 120px; */ 
 }
 .hero-title {    
     max-width: 496px;          
@@ -178,7 +176,10 @@ NAVY BLUE */
     font-size: 56px;
     line-height: 1.07;
     text-align: center;
-    letter-spacing: 0.02em;    
+    letter-spacing: 0.02em;  
+    padding-top: 188px;
+    margin-bottom: 48px; 
+    
     
 }
 
@@ -196,7 +197,9 @@ NAVY BLUE */
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    cursor: pointer;        
+    cursor: pointer; 
+    border-radius: 4px; 
+         
     
          
     
@@ -209,12 +212,15 @@ NAVY BLUE */
 
 /* section top */
 
-.section-info{
-    visibility: hidden;
+.visually-hidden{
+    position: fixed;
+    transform: scale(0);
+    
 }
 .section-top{
-    padding-bottom: 120px;
     padding-top: 120px;
+    padding-bottom: 120px;
+    
 }
 
 .section-top-list{
@@ -249,7 +255,7 @@ NAVY BLUE */
     
 .section-middle{
     padding-bottom: 120px;
-    padding-top: 120px;
+    
 }
 .section-middle-title {
     font-weight: 700;
@@ -264,11 +270,10 @@ NAVY BLUE */
 .section-middle-list{
     display: flex;
     margin-top: 78px;
-    flex-wrap: wrap;
+    
     
 }
-.section-middle-item:not(:last-child){   
-    width: 360px;
+.section-middle-item:not(:last-child){       
     margin-right: 24px;
 
 }
@@ -276,8 +281,9 @@ NAVY BLUE */
 /* section bottom */
 .section-bottom {
     background: var(--Section-color);
-    padding-bottom: 120px;
     padding-top: 120px;
+    padding-bottom: 120px;
+    
     
 }
 .section-bottom-title {
@@ -293,17 +299,17 @@ NAVY BLUE */
 
 }
 .section-bottom-list{
-    display: flex;     
-    flex-wrap: nowrap;
-    margin-top: 72px;
+    display: flex; 
+    margin-top: 72px; 
+
+     
 }
 .section-bottom-item{
     background-color: var(--background-body-color);
     border-radius: 0px 0px 4px 4px;
 }
-.section-bottom-item:not(:last-child){
-    width: 264px;
-    margin-right: 41px;
+.section-bottom-item:not(:last-child){    
+    margin-right: 24px;
 }    
    
 
@@ -320,7 +326,7 @@ NAVY BLUE */
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--header-title-color);
-    padding-bottom: 8px;
+    margin-bottom: 8px;
 
 }
 .section-bottom-paragraf {
@@ -375,14 +381,11 @@ NAVY BLUE */
     padding-top: 120px;
 }
 
-.section-portfolio-title{    
-    visibility: hidden;
 
-}
 .button-portfolio-list{
     display: flex;
     justify-content: center;    
-    flex-wrap: nowrap;
+    flex-direction: row;
     margin-bottom: 72px;
 }
 
@@ -393,9 +396,9 @@ NAVY BLUE */
 
 .portfolio-img-list{
     display: flex;
-    flex-wrap: wrap;
-    justify-content:space-between;
-    row-gap: 48px;
+    flex-wrap: wrap; 
+    row-gap: 48px;   
+    column-gap: 24px;
     
 }
 
@@ -410,6 +413,8 @@ NAVY BLUE */
     text-align: center;
     min-width: 78px;
     height: 48px;
+    align-items: center;
+    padding: 12px 24px;
     letter-spacing: 0.04em;
     border: 1px solid var(--border-image);
     border-radius: 4px;
@@ -436,12 +441,7 @@ NAVY BLUE */
     color: var(--paragraf-color);
 }
 
-/* .portfolio-card-item:not(:last-child) {    
-    margin-right: 24px;
-    max-width: 360px;
-} */
-/* .portfolio-card-item {
-    min-width: 360px;*/
+
 
 .portfolio-card{
     margin-right: 24px;
@@ -449,21 +449,12 @@ NAVY BLUE */
 }
 
 .card-title-box{
+    padding: 0px 16px;
     padding-top: 32px;
     padding-bottom: 32px;     
-    border-bottom: 1px solid #E7E9FC;
-    border-left: 1px solid #E7E9FC;
-    border-right: 1px solid #E7E9FC;
-}
- /*    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 0px 16px;
-    gap: 8px;
-    padding-top: 32px;
-    padding-bottom: 32px;    
-    border: 1px solid #E7E9FC; 
+    border-bottom: 1px solid var(--border-image);
+    border-left: 1px solid var(--border-image);
+    border-right: 1px solid var(--border-image);
     
 }
-    */
+ 
