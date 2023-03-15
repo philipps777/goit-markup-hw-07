@@ -165,8 +165,9 @@ NAVY BLUE */
 
 .hero {
     background-color: var(--header-title-color);
-     padding-bottom: 188px; 
-    /* padding-top: 120px; */ 
+    padding-top: 188px;
+    padding-bottom: 188px; 
+    
 }
 .hero-title {    
     max-width: 496px;          
@@ -176,8 +177,7 @@ NAVY BLUE */
     font-size: 56px;
     line-height: 1.07;
     text-align: center;
-    letter-spacing: 0.02em;  
-    padding-top: 188px;
+    letter-spacing: 0.02em;      
     margin-bottom: 48px; 
     
     
@@ -199,6 +199,7 @@ NAVY BLUE */
     letter-spacing: 0.04em;
     cursor: pointer; 
     border-radius: 4px; 
+    border: none;
          
     
          
@@ -212,11 +213,20 @@ NAVY BLUE */
 
 /* section top */
 
-.visually-hidden{
-    position: fixed;
-    transform: scale(0);
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
     
-}
+
 .section-top{
     padding-top: 120px;
     padding-bottom: 120px;
