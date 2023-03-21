@@ -9,7 +9,11 @@
     --Footer-paragraf-color: #E7E9FC;
     --hover-focus: #404BBF;
     --border-image: #E7E9FC;
-    
+    --company-logo-color: #8E8F99;
+    --social-icon-footer: #31D0AA;
+    --icon-footer-still: #8E8F99;
+
+
 }
 
 body {
@@ -164,9 +168,17 @@ NAVY BLUE */
 /* Section hero */
 
 .hero {
-    background-color: var(--header-title-color);
+    width: 1140px;
+    height: 600px;
+    margin: 0 auto;
+    /* background-color: var(--header-title-color); */
     padding-top: 188px;
     padding-bottom: 188px; 
+    background-image:linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), url(../images/people-office.png);
+    background-size: cover;
+    background-clip: padding-box;
+    
+
     
 }
 .hero-title {    
@@ -237,8 +249,24 @@ NAVY BLUE */
     display: flex;     
     flex-wrap: nowrap;
     width: 1130px;   
-   
+       
 }
+
+
+
+.top-icon-image{
+    display: flex;
+    width: 264px;
+    height: 112px;
+    background-color: var(--Section-color);
+    margin-bottom: 8px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    
+}
+  
+
+
 .section-top-item:not(:last-child){   
     min-width: 264px;
     margin-right: 24px;
@@ -259,7 +287,7 @@ NAVY BLUE */
     letter-spacing: 0.02em;
     color: var(--paragraf-color);
     
-    }
+    } 
 
     /* section middle */
     
@@ -317,6 +345,9 @@ NAVY BLUE */
 .section-bottom-item{
     background-color: var(--background-body-color);
     border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+
+
 }
 .section-bottom-item:not(:last-child){    
     margin-right: 24px;
@@ -345,16 +376,95 @@ NAVY BLUE */
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--paragraf-color);
+    margin-bottom: 8px;
 
+}
+.social-list{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+.social-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--button-portflio-color);
+    margin-bottom: 8px;
+}
+
+.social-link:hover,
+.social-link:focus{
+    background-color: var(--hover-focus);
+}
+.social-icon{
+    fill: var(--Section-color);
+}
+/* Last section */
+
+.section-last-title {
+    font-family: 'Roboto';    
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11em;  
+    margin-bottom: 72px; 
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+   
+  }
+    
+.section-last{
+    padding-top: 130px;
+    padding-bottom: 120px;
+    
+}
+
+.section-last-list{
+    display: flex;
+    
+}
+.section-last-link{     
+    display: flex; 
+    justify-content: center;
+    align-items: center;   
+    width: 168px;
+    height: 88px;    
+    border: 1px solid var(--company-logo-color);
+    border-radius: 4px;
+}
+
+    
+.section-last-item:not(:last-child){
+    margin-right: 24px;
+}
+ .last-icon-image{   
+    fill: var(--company-logo-color);
+       
+    
+ }
+.section-last-link:hover, 
+.section-last-link:focus{
+    border: 1px solid var(--hover-focus);
+}
+.last-icon-image:hover,
+.last-icon-image:focus{
+    fill: var(--hover-focus);
 }
 
 
 /* footer section */
 
 .footer {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
     background: var(--header-title-color);
     padding-bottom: 100px;
     padding-top: 100px;
+    
 
 }
 .footer-logo {    
@@ -383,6 +493,50 @@ NAVY BLUE */
     
 }
 
+.footer-container{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: flex-start;
+   
+    
+}
+.footer-box{
+    margin-right: 120px;
+}
+.footer-social-title{
+    font-family: 'Roboto';    
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--background-body-color);
+    margin-bottom: 16px;
+}
+.footer-social-list{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+.footer-social-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--paragraf-color);
+    margin-bottom: 8px;
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus{
+    background-color: var(--social-icon-footer);
+}
+.footer-social-icon{
+    fill: var(--Section-color);
+}
 
 /* PORTFOLIO */
 
@@ -434,6 +588,8 @@ NAVY BLUE */
 .button-portfolio-click:focus {
     background: var(--hover-focus);     
     color: var(--button-hero-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+
 }
 
 .card-title {
@@ -468,3 +624,7 @@ NAVY BLUE */
     
 }
  
+.portfolio-card-item:hover,
+.portfolio-card-item:focus{
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
