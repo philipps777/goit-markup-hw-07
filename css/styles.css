@@ -632,6 +632,9 @@ NAVY BLUE */
     border-right: 1px solid var(--border-image);
     
 }
+.button-portfolio-link{
+    display: block;
+}
 
 .button-portfolio-link:hover,
 .button-portfolio-link:focus{
