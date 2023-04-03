@@ -939,7 +939,7 @@ NAVY BLUE */
     font-size: 12px;
     line-height: 1.33em;
     letter-spacing: 0.04em;
-    color: var(--font-color)
+    color: var(--font-color);
     resize: none;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;    
@@ -975,7 +975,7 @@ NAVY BLUE */
 .modal-input-check:checked + .modal-label-check::before{    
     border: transparent;
     background-color: var(--hover-focus);
-    background-image: url(/images/click.svg);
+    background-image: url(../images/click.svg);
 }   
 .modal-input-check:checked + .modal-label-check::before{
     outline: 2px solid rgba(0, 0, 255, 0.5);
