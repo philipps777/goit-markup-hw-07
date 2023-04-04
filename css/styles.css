@@ -631,13 +631,13 @@ NAVY BLUE */
     margin-bottom: 16px;
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.5em;
+    line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--button-hero-color);
 }
 .footer-input-form::placeholder{    
     font-size: 12px;
-    line-height: 2em;
+    line-height: 2;
     letter-spacing: 0.04em;
     color: rgba(255, 255, 255, 0.6);
     
@@ -661,9 +661,10 @@ NAVY BLUE */
     height: 40px;
     background: var(--button-portflio-color);
     border-radius: 4px;
+    border: none;
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.5em;
+    line-height: 1.5;
     align-items: center;
     text-align: center;
     letter-spacing: 0.04em;
@@ -871,35 +872,41 @@ NAVY BLUE */
     fill: var(--background-body-color);
 }
 /* Modal content-inputs */
-
+.modal-form{
+    padding-top: 48px; 
+}
 .modal-title{   
     display: block; 
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.5em;
+    line-height: 1.5;
     text-align: center;
     letter-spacing: 0.02em;
-    color: var(--header-title-color);
-    padding-top: 48px;
+    color: var(--header-title-color);    
     margin-bottom: 16px;
     
 }
 
-.modal-input-wrap{
+.modal-input-wrap{  
     position: relative;
 }
+
 .modal-label-text{   
+    display: block;
+    width: 100%;
     font-size: 12px;
-    line-height: 1.3em;
+    line-height: 1.3;
     letter-spacing: 0.04em;
     color: var(--icon-footer-still);
     margin-bottom: 4px;
+    
 }
 .modal-inpute{
+    display: block;
     width: 100%;
     height: 40px;
     font-size: 12px;
-    line-height: 1.16em;
+    line-height: 1.16;
     letter-spacing: 0.01em;
     color: var(--icon-footer-still);
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -912,13 +919,10 @@ NAVY BLUE */
     border-color: var(--button-portflio-color);
     outline: none;
 }
-.modal-inpute:not(:last-child){
-    margin-bottom: 8px;
-}
 
 .modal-input-icon{
     position: absolute;      
-    top: 40%;
+    top: 50%;
     left: 16px;
     transform: translateY(-50%);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -930,6 +934,8 @@ NAVY BLUE */
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .modal-field{
+    display: flex;
+    flex-direction: column;
     margin-bottom: 8px;
 }
 .modal-comment-inpute{
@@ -937,7 +943,7 @@ NAVY BLUE */
     height: 120px;
     padding: 10px 16px;
     font-size: 12px;
-    line-height: 1.33em;
+    line-height: 1.33;
     letter-spacing: 0.04em;
     color: var(--font-color);
     resize: none;
@@ -957,7 +963,7 @@ NAVY BLUE */
     display: flex;
     align-items: center;
     font-size: 12px;
-    line-height: 1.16em;
+    line-height: 1.16;
     letter-spacing: 0.01em;
     color: var(--icon-footer-still);
     margin-bottom: 24px;
@@ -980,7 +986,13 @@ NAVY BLUE */
 .modal-input-check:checked + .modal-label-check::before{
     outline: 2px solid rgba(0, 0, 255, 0.5);
 }
-
+.modal-link{
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.04em;
+    text-decoration-line: underline;
+    color: var(--button-portflio-color);
+}
 .modal-form-submit {   
     margin: 0 auto;
     display: block; 
