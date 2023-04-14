@@ -1870,10 +1870,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
 }
 
     
-.section-last-item:not(:last-child){
-    margin-right: 15px;
-    
-} 
+
 
  .last-icon-image{   
     fill: var(--company-logo-color);
@@ -2385,6 +2382,8 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
 .social-icon{
     fill: var(--Section-color);
 } 
+
+/* Last section */
 .section-last-title {
     font-family: 'Roboto';    
     font-weight: 700;
@@ -2454,6 +2453,8 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
     border: 1px solid var(--hover-focus);
     border-radius: 4px;
 } 
+
+
 /* * FOOTER */ 
 
 .footer {
