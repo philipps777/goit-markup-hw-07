@@ -1870,8 +1870,6 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
 }
 
     
-
-
  .last-icon-image{   
     fill: var(--company-logo-color);
  }
