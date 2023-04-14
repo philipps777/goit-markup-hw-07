@@ -1212,7 +1212,7 @@ NAVY BLUE */
 }
 
 
-.mobile-address-item:not(:last-child){
+.mobile-address-item {
     margin-bottom: 40px;
 }
 
