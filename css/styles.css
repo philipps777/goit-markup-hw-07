@@ -1433,6 +1433,9 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
     padding: 72px 15px 24px 15px;
     
 }
+.modal-form{
+    padding-top: 72px;
+}
 .modal-close-btn{
     position: absolute;
     top: 24px;
@@ -3454,7 +3457,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
     } */
     /* Modal content-inputs */
     .modal-form{
-        padding-top: 48px; 
+        padding-top: 72px; 
     }
     .modal-title{   
         display: block; 
