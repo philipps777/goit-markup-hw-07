@@ -2773,8 +2773,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
         height: 600px;
         margin: 0 auto;   
         padding-top: 188px;
-        padding-bottom: 188px; 
-        background-image:linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), url(../images/people-office.png);
+        padding-bottom: 188px;       
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
