@@ -3466,6 +3466,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
         letter-spacing: 0.02em;
         color: var(--header-title-color);    
         margin-bottom: 16px;
+        padding-top: 42px;
         
     }
 
