@@ -112,7 +112,7 @@ NAVY BLUE */
   .header-list {
     display: flex;
     align-items: center;
-    margin-right: 76px;
+   
     gap: 40px;
   }
 
@@ -269,8 +269,8 @@ NAVY BLUE */
     /* flex-wrap: nowrap;
     /* width: 1130px;   
         */
-    row-gap: 72px;
-    column-gap: 24px;
+    /* row-gap: 72px;
+    column-gap: 24px; */
 } 
 
 .item-top{
@@ -361,7 +361,7 @@ NAVY BLUE */
 }
 .section-bottom-list{
     display: flex; 
-    margin-top: 72px; 
+    /* margin-top: 72px;  */
 
      
 }
@@ -547,12 +547,12 @@ NAVY BLUE */
     
 }
 
-.footer-container{
+/* .footer-container{
     display: flex;
     align-items: baseline;
     
     
-}
+} */
 /* .footer-box{
     margin-right: 120px;
 } */
@@ -1252,6 +1252,10 @@ NAVY BLUE */
         padding: 0 15px;
         
     }
+    ul{
+        padding-left: 0;
+      
+    }
     .mobile-menu-open {
         background-color: transparent;
         border: none;
@@ -1312,7 +1316,7 @@ NAVY BLUE */
         display: flex;    
         flex-direction: column;
         width: 100%;
-        align-items: center
+        
     }
     .section-top-item{
         width: 300px;
@@ -1382,6 +1386,9 @@ NAVY BLUE */
         padding-top: 96px;
         
     } 
+    .footer-wraper{
+        margin-bottom: 72px;
+    }
     .footer-box{
         margin: 0;
         margin-bottom: 72px;
@@ -1412,8 +1419,7 @@ NAVY BLUE */
     .footer-social-title{
         text-align: center;
     }
-    .footer-social-list{
-        margin-bottom: 112px;
+    .footer-social-list{       
         display: flex;
     }
     .footer-social-link{
@@ -1802,33 +1808,41 @@ NAVY BLUE */
     }
                                      /* Footer */
     .footer{     
-        display: flex;   
+        /* display: flex;   
         flex-direction: column;
         flex-wrap: wrap;       
         align-items: baseline;
-        align-content: center;
+        align-content: center; */
         background: var(--header-title-color);
         padding-bottom: 96px;
         padding-top: 96px;
-        
+        width: 768px;
     } 
-    .footer-row{
+    .footer-container{
         display: flex;
         flex-direction: column;
-
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 15px;
     }
+    /* .container {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 15px;
+    } */
     .footer-wraper{
         display: flex;
-    }
-    .footer-box{
-        margin: 0;
         margin-bottom: 72px;
     }
-    /* .footer-container{
+    .footer-box{
+        
+        
+    }
+    .footer-container{
         display: flex;
         flex-wrap: wrap;
         padding-left: 108px;
-    }          */
+    }         
     .footer-input-box{
         display: flex;
         flex-direction: column;        
@@ -1885,13 +1899,17 @@ NAVY BLUE */
         padding: 0 15px;
         margin: 0 auto;
     }   
+    .hero {
+        max-width: 100%; 
+        height: auto; 
+    }
     .hero-title{
         width: 496px;
         height: 120px;
        margin: auto;
         margin-bottom: 48px;
     }
-    .footer-row{
+    .footer-container{
         display: flex;
     }
     .footer-wraper{
