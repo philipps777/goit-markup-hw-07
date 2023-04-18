@@ -184,7 +184,7 @@ NAVY BLUE */
 /* Section hero */
 
 .hero {
-    /* max-width: 100%; */
+    max-width: 1440px;
     /* height: auto; */
     margin: 0 auto;   
     padding-top: 188px;
@@ -1816,7 +1816,7 @@ NAVY BLUE */
         background: var(--header-title-color);
         padding-bottom: 96px;
         padding-top: 96px;
-        width: 768px;
+        width: 100%;
     } 
     .footer-container{
         display: flex;
@@ -1834,10 +1834,7 @@ NAVY BLUE */
         display: flex;
         margin-bottom: 72px;
     }
-    .footer-box{
-        
-        
-    }
+    
     .footer-container{
         display: flex;
         flex-wrap: wrap;
@@ -1899,10 +1896,7 @@ NAVY BLUE */
         padding: 0 15px;
         margin: 0 auto;
     }   
-    .hero {
-        max-width: 1158px; 
-        height: auto; 
-    }
+   
     .hero-title{
         width: 496px;
         height: 120px;
